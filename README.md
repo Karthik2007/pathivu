@@ -2,8 +2,8 @@
 A Flashcard app using KMM
 
 
-Tech Stack
-KMM
-Decompose
-SqlDelight 
-Koin
+### Tech Stack
+- KMM
+- Decompose
+- SqlDelight
+- Koin
