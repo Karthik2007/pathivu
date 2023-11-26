@@ -1,0 +1,11 @@
+CREATE TABLE wordsSample (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+kanji TEXT NOT NULL
+);
+
+add:
+INSERT INTO wordsSample (kanji)
+VALUES (?);
+
+get:
+SELECT * FROM wordsSample;
