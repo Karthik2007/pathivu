@@ -1,6 +1,7 @@
 plugins {
     kotlin("multiplatform")
     id("com.android.library")
+    id("org.jetbrains.kotlin.plugin.parcelize")
 }
 
 @OptIn(org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi::class)
@@ -21,7 +22,7 @@ kotlin {
         iosSimulatorArm64()
     ).forEach {
         it.binaries.framework {
-            baseName = "shared"
+            baseName = "main"
         }
     }
 
@@ -32,6 +33,7 @@ kotlin {
                     api(core)
                     api(test)
                 }
+                api(Dep.Decompose.core)
                 //put your multiplatform dependencies here
             }
         }
@@ -44,7 +46,7 @@ kotlin {
 }
 
 android {
-    namespace = "com.pathivu"
+    namespace = "com.pathivu.main"
     compileSdk = 34
     defaultConfig {
         minSdk = 26

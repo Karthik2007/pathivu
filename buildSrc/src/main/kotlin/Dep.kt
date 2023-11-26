@@ -14,4 +14,11 @@ object Dep {
         const val core = "com.arkivanov.decompose:decompose:${Versions.decompose}"
         const val jetpackCompose = "com.arkivanov.decompose:extensions-compose-jetpack:${Versions.decompose}"
     }
+    object Compose {
+        const val ui = "androidx.compose.ui:ui:${Versions.compose}"
+        const val uiTooling = "androidx.compose.ui:ui-tooling:${Versions.compose}"
+        const val foundation = "androidx.compose.foundation:foundation:${Versions.compose}"
+        const val material = "androidx.compose.material:material:${Versions.compose}"
+        const val activity = "androidx.activity:activity-compose:${Versions.composeActivity}"
+    }
 }

@@ -15,5 +15,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "pathivu"
 include(":androidApp")
-include(":dashboard")
+include(":main")
 include(":domain_words")
